@@ -1,0 +1,45 @@
+.slider {
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-prev,
+  .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .slider-prev {
+    left: 0;
+  }
+  
+  .slider-next {
+    right: 0;
+  }
+  
+  @media (min-width: 640px) {
+    .slider-wrapper {
+      margin-left: -25%;
+    }
+    
+    .slider-image {
+      width: 50%;
+    }
+    
+    .slider-prev,
+    .slider-next {
+      padding: 1rem;
+    }
+  }
+  
